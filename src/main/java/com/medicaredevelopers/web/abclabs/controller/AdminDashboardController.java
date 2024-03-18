@@ -95,7 +95,7 @@ public class AdminDashboardController {
 			return "login";
 		}
 	}
-
+//  technicians functions
 	@GetMapping("/technicians")
 	public String technicians(Model model, HttpSession session) {
 		String username = (String) session.getAttribute("username");
