@@ -28,7 +28,7 @@ public class AppointmentRestController {
 	@GetMapping("/{branch}/{date}")
 	public Time getMaxAppoinmentTimeForBranch(@PathVariable("branch") int branch, @PathVariable("date") String date) {
 
-		return service.getMaxAppoinmentTimeForBranch(branch, date);
+		return service.getMaxAppoinmentTimeForBranch(branch, date );
 
 	}
 
