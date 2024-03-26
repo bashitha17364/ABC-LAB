@@ -30,7 +30,6 @@
               <th>Report</th>
               <th>Date</th>
               <th>Time</th>
-              <th>Add Report</th>
             </tr>
           </thead>
           <tbody>
@@ -51,7 +50,6 @@
             <td><%=appointment.getDate() %></td>
             <td><%=appointment.getTime() %></td>
            
-            <th><a class="button is-ghost">Update</a></th>
           </tr>
           <% } %>
           </tbody>

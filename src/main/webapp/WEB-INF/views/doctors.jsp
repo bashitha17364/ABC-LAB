@@ -23,7 +23,6 @@
               <th>ID</th>
               <th>Name</th>
               <th>Mobile</th>
-			<th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -38,9 +37,6 @@
            <td><%=doctor.getId()%></td>
            <td><%=doctor.getName()%></td>
            <td><%=doctor.getMobile()%></td>
-
-           
-            <th><a class="button is-ghost">Update</a></th>
           </tr>
           <% } %>
           </tbody>

@@ -43,8 +43,6 @@
            <td><%=patient.getEmail()%></td>
            <td><%=patient.getAddressLine1()+" "+patient.getAddressLine2()%></td>
            <td><%=patient.getDob()%></td>
-           
-            <th><a class="button is-ghost">Update</a></th>
           </tr>
           <% } %>
           </tbody>

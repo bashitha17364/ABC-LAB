@@ -23,7 +23,7 @@
               <th>ID</th>
               <th>Name</th>
               <th>Address</th>
-			<th>Telephone</th>
+			        <th>Telephone</th>
             </tr>
           </thead>
           <tbody>
@@ -37,10 +37,11 @@
           <tr>
            <td><%=branch.getId()%></td>
            <td><%=branch.getCity()%></td>
+           <td><%=branch.getAddress()%></td>
            <td><%=branch.getTelephone()%></td>
 
            
-            <th><a class="button is-ghost">Update</a></th>
+           <!-- <th><a class="button is-ghost">Update</a></th>-->
           </tr>
           <% } %>
           </tbody>
