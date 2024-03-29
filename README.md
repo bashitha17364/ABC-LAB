@@ -14,3 +14,4 @@
 
 
 # About The Project
+A comprehensive academic purpose software program called the Medical Lab Appointment System (MediLab) was created to ABC Laboratories provides a range of services for patients who require medical tests. The proposed Lab Appointment System must help in registering information about patients who are planning to do the medical test and handles.
