@@ -27,5 +27,9 @@ public class BranchService {
 		
 		return repo.findAll();
 	}
+
+	public void saveBranch(Branch branch) {
+        repo.save(branch);
+    }
 	
 }
