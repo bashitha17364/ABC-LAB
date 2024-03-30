@@ -73,7 +73,8 @@
     <div class="container has-text-centered make-appointment-card" data-aos="fade-up">
         <p class="subtitle is-4 text-appointment-today">Make an appointment for your health test today.</p>
         <!-- <a href="appointment.jsp" class="button is-primary is-large">Make Appointment Today</a> -->
-        <a class="button is-primary is-large" data-p-open-modal="#appointment-modal">Make Appointment Today</a>        
+        <a class="button is-primary is-large" data-p-open-modal="#appointment-modal">Make Appointment Today</a>
+        <a class="button is-primary is-large" data-p-open-modal="#report-modal">View Report</a>        
     </div>
 </section>
 
@@ -160,8 +161,26 @@
 		</div>
 	</div>
 
+    <!-- Your modals will be here -->
+    <div class="p-modal" id="report-modal">
+        <div class="container mt-5 p-3">
+            <h2 class="title is-2 has-text-centered mb-4">View Report</h2>
+                <div class="columns">
+                    <!-- Patient ID -->
+                    <div class="column is-half">
+                        <label for="patientId" class="label">Patient ID</label>
+                        <div class="control">
+                            <input type="text" class="input" id="patientId_report" name="patientId_report" maxlength="10" pattern="\d+" title="Please enter a valid integer value" required>
+                        </div>
+                    </div>
+                </div>
+        </div>
+		<div class="p-modal-button-container">
+			<a href="#" onclick="viewReport()">View Report</a>
+			<a href="#" data-p-cancel>Cancel</a>
+		</div>
+	</div>
 </div>
-
 <!-- Services Section -->
 <section id="services" class="section" data-aos="fade-up">
     <div class="container">
@@ -336,6 +355,18 @@
         }
 
     }
+
+    function viewReport() {
+    // Get form data
+    const patientId = document.getElementById('patientId_report').value;
+
+    if (patientId == "") {
+        alert("Please enter your Patient ID.");
+    } else {
+        // Redirect to another page with patientId
+        window.location.href = "/report_redirect?patientId=" + encodeURIComponent(patientId);
+    }
+}
 
 </script>
 
