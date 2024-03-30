@@ -362,7 +362,11 @@
 
     if (patientId == "") {
         alert("Please enter your Patient ID.");
-    } else {
+    } 
+    else if (patientId == "1") {
+        alert("NO patient is enrolled");
+    } 
+    else {
         // Redirect to another page with patientId
         window.location.href = "/report_redirect?patientId=" + encodeURIComponent(patientId);
     }

@@ -48,10 +48,10 @@
         <h1 class="title is-3 has-text-centered">Blood Test Medical Report</h1>
         <br/>
         <h2 class="subtitle is-5">Patient Information</h2>
-        <p><strong>Patient Name:</strong> John Doe</p>
-        <p><strong>Date of Birth:</strong> January 1, 1980</p>
+        <p><strong>Patient Name:</strong> bashitha</p>
+        <p><strong>Date of Birth:</strong> 10/01/1995</p>
         <p><strong>Gender:</strong> Male</p>
-        <p><strong>Contact Number:</strong> +1 123-456-7890</p>
+        <p><strong>Contact Number:</strong> 0757224769</p>
 
         <h2 class="subtitle is-5">Test Results</h2>
         <table class="table is-fullwidth">
