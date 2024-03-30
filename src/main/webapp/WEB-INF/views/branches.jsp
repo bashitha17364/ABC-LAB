@@ -129,7 +129,7 @@ function createOffice() {
         }else if (city=="") {
             alert('Please enter city.');
         }else if (telephone=="") {
-            alert('Please enter appointment number.');
+            alert('Please enter tel number.');
         }
         else{
 
